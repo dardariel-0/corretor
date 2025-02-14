@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Projeto Interativo</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <nav class="header container">
+      <a href="#home"><img src="/img/logo-w.svg" alt=""></a>
+      <ul>
+        <li>
+          <a href="#sobre-mim">Sobre mim</a>
+        </li>
+        <li>
+          <a href="#imoveis">Imóveis</a>
+        </li>
+        <li>
+          <a href="#contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="introducao" id="home">
+    <div class="conteudo container">
+      <h1 class="titulo">Construtor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nam, eligendi ea dolorem ipsum in nulla soluta fugit consequatur aspernatur voluptates esse perspiciatis?</p>
+    </div>
+    <div class="layer l1 linear-350"></div>
+    <div class="layer l2"></div>
+    <div class="layer l3"></div>
+  </div>
+
+  <section class="sobre-mim-bg">
+    <div class="sobre-mim container">
+      <div class="conteudo dados fade">
+        <h1 class="titulo fade-left">Sobre mim</h1>
+        <p>Corretor empresarial, amet consectetur adipisicing elit. Libero aliquid laboriosam vitae ut optio excepturi expedita sed reiciendis voluptatibus! Perspiciatis aperiam illo repellendus, harum ipsa rem cumque. Quia, ipsa quo!</p>
+        <a href="/" class="button-1"> Fale comigo <img src="/img/icones/wpp.svg" alt=""></a>
+
+      </div>
+    </div>
+
+    <div class="bg b1 linear-350-r">
+    </div>
+    <div class="bg b2"></div>
+    <div class="bg b3 linear-350"></div>
+    <div class="bg b4 linear-300"></div>
+    <div class="bg b5"></div>
+  </section>
+
+  <section class="container" id="imoveis">
+    <div class="conteudo">
+      <div class="item">
+        <div class="titulo-item">
+          <h2>Ministro Nelson Hungria</h2>
+          <span>Rua Ministro Nélson Hungria, 90 - Morumbi, São Paulo - SP</span>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, consequuntur provident iure odio quos pariatur qui veritatis unde. Facilis labore blanditiis porro consequuntur.</p>
+        <div class="adicionais">
+          <div class="informacoes-item">
+            <h3>Características Técnicas</h3>
+            <ul>
+              <li>Área Bruta Locável <span>5.876m²</span></li>
+              <li>Área Máxima do Andar <span>1.200m²</span></li>
+              <li>Área Mínima do Andar <span>1.000m²</span></li>
+              <li>Andares<span>4</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <a href="/" class="button-1"> saiba mais</a>
+      </div>
+      <div class="slide-fotos">
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="/img/fotos/1.png">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/fotos/2.png">
+          </div>
+          <div class="mySlides">
+            <img src="img/fotos/3.png">
+          </div>
+          <div class="mySlides">
+            <img src="img/fotos/4.png">
+          </div>
+          <div class="mySlides">
+            <img src="img/fotos/5.png">
+          </div>
+
+
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6588185824667!2d-46.70533509999999!3d-23.616566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50d6bee3c4ab%3A0xa0fcff5f65a2e722!2sR.%20Min.%20Nelson%20Hungria%2C%2090%20-%20Vila%20Tramontano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005690-050!5e0!3m2!1spt-BR!2sbr!4v1726266402247!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container" id="contato">
+    <div class="conteudo">
+      <section aria-label="Formulário">
+        <form class="form-01 fade-70">
+
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label for="tel">Telefone</label>
+            <input type="text" id="tel" name="telefone" placeholder="(99) 99999-9999">
+          </div>
+
+          <div class="coluna-2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com">
+          </div>
+
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+          </div>
+
+          <div>
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" placeholder="Estado">
+          </div>
+
+          <div class="coluna-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="3" name="mensagem" id="mensagem" placeholder="O que você precisa?"></textarea>
+          </div>
+          <button class=" button-1">Enviar Mensagem</button>
+        </form>
+      </section>
+
+      <section class="infos">
+        <h1 class="titulo">Vamos conversar!</h1>
+        <p>Entre em contato com minha equipe para conversarmos sobre a sua pretensão de lugar para viver de forma segura e confortável.
+        </p>
+
+        <div>
+          <ul>
+            <li><a href="/"><img src="/img/icones/wpp.svg" alt="">(00) 00000-0000</a></li>
+            <li><a href="/"><img src="/img/icones/instagram.svg" alt="">corretor_exemplo</a></li>
+            <li><a href="/"><img src="/img/icones/face.svg" alt="">Corretor Exemplo</a></li>
+            <li><a href="/"><img src="/img/icones/email.svg" alt="">corretor_exemplo@gmail.com</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg b6"></div>
+    <div class="bg b7"></div>
+    <div class="bg b8"></div>
+  </section>
+
+  <footer class="footer-bg">
+    <div class="footer"></div>
+  </footer>
+</body>
+<script src="/script.js"></script>
+
+</html>

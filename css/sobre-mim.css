@@ -1,0 +1,60 @@
+.sobre-mim-bg {
+  background-color: #060606;
+  position: relative;
+}
+
+.sobre-mim-bg .bg {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.b1 {
+  background-image: url("/img/parallax-2/3.png");
+}
+.b2 {
+  background-image: url("/img/parallax-2/2.png");
+}
+.b3 {
+  background-image: url("/img/parallax-2/1.png");
+}
+.b4 {
+  background-image: url("/img/parallax-2/casa.png");
+}
+.b5 {
+  background-image: url("/img/parallax-2/men.png");
+}
+
+/* //estilo texto */
+
+.sobre-mim .conteudo {
+  padding-top: 60px;
+}
+
+.informacoes {
+  display: flex;
+  gap: 80px;
+}
+
+.dados {
+  display: grid;
+  place-content: start;
+  gap: 20px;
+}
+
+.dados p {
+  max-width: 52ch;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.foto {
+  max-width: 400px;
+}
+.informacoes h1 {
+  grid-column: 1/-1;
+}

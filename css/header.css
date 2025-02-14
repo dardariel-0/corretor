@@ -1,0 +1,26 @@
+.header-bg {
+  z-index: 5;
+}
+
+.header {
+  padding: 12px 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header ul {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.header li {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.header li:hover {
+  scale: 1.15;
+  background-color: #444;
+  transition: 0.2s;
+}

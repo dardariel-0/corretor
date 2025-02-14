@@ -1,0 +1,63 @@
+#contato {
+  /* padding-left: 0.5%; */
+  z-index: 2;
+}
+
+#contato .conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 40px;
+}
+
+.infos {
+  /* background-color: black; */
+  padding: 20px 32px;
+  border-radius: 0px 8px 8px 0px;
+  max-width: 550px;
+}
+
+#contato h1 {
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+#contato p {
+  max-width: 32ch;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.infos ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 0.875rem;
+  gap: 12px;
+}
+
+.infos li a {
+  display: flex;
+  gap: 8px;
+}
+
+.infos li a:hover {
+  scale: 1.01;
+  transition: 0.3s;
+}
+
+.infos img {
+  width: 12px;
+}
+
+.b8 {
+  background-image: url("/img/parallax-3/1.png");
+  display: grid;
+  justify-content: center;
+}
+
+.b7 {
+  background-image: url("/img/parallax-3/2.png");
+}
+.b6 {
+  background-image: url("/img/parallax-3/3.png");
+}
