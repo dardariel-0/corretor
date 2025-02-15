@@ -1,0 +1,74 @@
+/* KEYFRAMES */
+
+/* 300 */
+@keyframes linear-300 {
+  to {
+    transform: translateY(200px);
+  }
+  from {
+    transform: translateY(-120px);
+  }
+}
+
+.linear-300 {
+  animation: linear-300 linear;
+  animation-timeline: scroll();
+}
+/* 350 */
+@keyframes linear-350 {
+  to {
+    transform: translateX(-900px);
+  }
+  from {
+    transform: translateX(300px);
+  }
+}
+
+.linear-350 {
+  animation: linear-350 linear;
+  animation-timeline: scroll();
+}
+/* 350r */
+@keyframes linear-350-r {
+  to {
+    transform: translateX(100px);
+  }
+  from {
+    transform: translateX(-150px);
+  }
+}
+
+.linear-350-r {
+  animation: linear-350-r linear;
+  animation-timeline: scroll();
+}
+
+/* FADE 30 */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fade;
+  animation-timeline: scroll();
+}
+
+/* FADE 70 */
+@keyframes fade-70 {
+  70% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+.fade-70 {
+  animation: fade-70;
+  animation-timeline: scroll();
+}
