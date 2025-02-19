@@ -1,16 +1,13 @@
 .slide-fotos {
-  /* display: grid; */
-  gap: 8px;
-  place-content: start;
-  max-height: 700px;
+  display: grid;
+  gap: 20px;
 }
 
 .slideshow-container {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  max-height: 280px;
-  margin-bottom: 20px;
+  max-height: 360px;
 }
 
 /* Hide the images by default */

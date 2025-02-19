@@ -1,7 +1,30 @@
 .sobre-mim-bg {
   background-color: #060606;
   position: relative;
+  z-index: -2;
 }
+
+.sobre-mim {
+  margin-bottom: 100px;
+  position: relative;
+  height: 84vh;
+
+  & .conteudo {
+    z-index: 3;
+    padding-top: 120px;
+
+    & .titulo {
+      margin-bottom: 32px;
+    }
+
+    & p {
+      max-width: 60ch;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* /////////////////////////////////// */
 
 .sobre-mim-bg .bg {
   position: absolute;
@@ -11,6 +34,7 @@
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .b1 {
@@ -27,34 +51,4 @@
 }
 .b5 {
   background-image: url("/img/parallax-2/men.png");
-}
-
-/* //estilo texto */
-
-.sobre-mim .conteudo {
-  padding-top: 60px;
-}
-
-.informacoes {
-  display: flex;
-  gap: 80px;
-}
-
-.dados {
-  display: grid;
-  place-content: start;
-  gap: 20px;
-}
-
-.dados p {
-  max-width: 52ch;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.foto {
-  max-width: 400px;
-}
-.informacoes h1 {
-  grid-column: 1/-1;
 }

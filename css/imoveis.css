@@ -1,54 +1,84 @@
-#imoveis .bg {
-  /* padding-left: 4%; */
-  display: grid;
-  justify-content: center;
+.imoveis-bg {
+  background-color: black;
+  background-image: linear-gradient(to right, #000 40%, #4b4b4b 0%);
 }
 
-#imoveis .titulo {
-  max-width: 50ch;
+.imoveis-bg {
+  & .conteudo {
+    padding-top: 120px;
+  }
+
+  .imoveis .titulo {
+    margin-bottom: 32px;
+  }
+
+  & .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 20px;
+    align-items: start;
+    margin-bottom: 80px;
+  }
+
+  & .titulo h2 {
+    margin-bottom: 8px;
+  }
+}
+
+.titulo-item {
   grid-column: 1/-1;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
-#imoveis .conteudo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  align-items: start;
-}
-
-.item {
+.infos-principal {
   display: grid;
   gap: 20px;
+}
+
+.informacoes-item {
+  background: linear-gradient(#e0e2e3, #abadae);
+  padding: 12px 18px;
   border-radius: 8px;
-}
-
-.item p {
-  max-width: 56ch;
-  color: white;
-  margin-bottom: 24px;
-}
-
-.item img {
-  height: 100%;
-  width: 100%;
-}
-.adicionais {
   gap: 20px;
+
+  & h3 {
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  & h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #4b4b4b;
+    margin-top: 8px;
+  }
+
+  & ul {
+    color: #000;
+    margin-bottom: 12px;
+  }
+
+  & ul li {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  & li span {
+    font-weight: bold;
+  }
 }
 
-.titulo-item h2 {
-  font-size: 2rem;
-  color: white;
-}
-.titulo-item span {
-  font-size: 1rem;
-  color: grey;
+.mapa {
+  height: 200px;
 }
 
 .mapa iframe {
   width: 100%;
-  height: 200px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -58,40 +88,12 @@
   }
 }
 
-.informacoes-item {
-  color: white;
-}
-
-.informacoes-item h3 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 16px;
-}
-
-.informacoes-item h3::after {
-  content: "";
-  display: block;
+.mais-info {
   width: 100%;
-  height: 2px;
-  background-color: gray;
-  margin-top: 8px;
-}
-.adicionais {
-  background-color: black;
-  padding: 12px 18px;
-  border-radius: 8px;
-}
-.informacoes-item ul {
-  margin-bottom: 12px;
-}
-
-.informacoes-item ul li {
   display: flex;
-  justify-content: space-between;
-  font-size: 0.875rem;
-  margin-bottom: 8px;
+  gap: 20px;
 }
 
-.informacoes-item li span {
-  font-weight: bold;
+.mais-info span {
+  max-width: 40ch;
 }

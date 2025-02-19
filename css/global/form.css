@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  background-color: white;
+  background: linear-gradient(#e0e2e3, #abadae);
   padding: 20px 40px;
   border-radius: 8px;
 }
@@ -15,8 +15,9 @@
 
 .form-01 label {
   display: block;
-  font: 600 0.875rem/1.5 "poppins", sans-serif;
+  font: 600 1rem/1.5 "Urbanist", sans-serif;
   margin-bottom: 4px;
+  color: #4b4b4b;
 }
 .form-01 .coluna-2 {
   grid-column: span 2;
@@ -24,9 +25,9 @@
 .form-01 input[type="text"],
 .form-01 input[type="email"],
 .form-01 textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 "Urbanist", sans-serif;
   background-color: #f1f1f1;
-  border: 1px solid #f9f9f9;
+  border: 1px solid #939393;
   padding: 10px;
   border-radius: 4px;
   width: 100%;
@@ -36,9 +37,9 @@
 .form-01 input[type="email"]:focus,
 .form-01 textarea:focus {
   outline: none;
-  border-color: grey;
+  border-color: #7a7a7a;
   background-color: white;
-  box-shadow: 0 0 0 2px #f1f1f1;
+  box-shadow: 0 0 0 2px #a9a9a9;
 }
 @media (max-width: 600px) {
   .form-01 {

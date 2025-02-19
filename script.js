@@ -1,3 +1,13 @@
+const sobreMim = document.querySelector('[href="#sobre-mim"]');
+const headerBg = document.querySelector(".header-bg");
+console.log(sobreMim);
+
+function mudarCor() {
+  headerBg.classList.toggle("preto");
+}
+
+sobreMim.addEventListener("click", mudarCor);
+
 // slide
 
 let slideIndex = 1;

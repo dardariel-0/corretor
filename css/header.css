@@ -1,21 +1,49 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.header-bg {
+  background-color: #4b4b4b;
+  height: 60px;
+  display: grid;
+  align-items: center;
+}
+
+.header-bg.preto {
+  background-color: #000;
+}
+
 .header {
-  padding-top: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header ul {
   display: flex;
-  gap: 20px;
+  gap: 80px;
   color: white;
+}
+
+.header .logo {
+  max-width: 64px;
 }
 
 .header li {
   padding: 4px 8px;
   border-radius: 4px;
+  position: relative;
 }
-.header li:hover {
-  scale: 1.15;
-  background-color: #444;
+.header li::before {
+  display: none;
+  content: "●";
+  position: absolute;
+  left: -8px;
+}
+
+.header li:hover::before {
+  display: block;
   transition: 0.2s;
 }

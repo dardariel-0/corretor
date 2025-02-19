@@ -1,17 +1,19 @@
-#contato {
-  /* padding-left: 0.5%; */
-  z-index: 2;
+.contato {
+  background-color: #000;
+  padding-top: 100px;
 }
 
-#contato .conteudo {
+.contato .conteudo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .infos {
   /* background-color: black; */
-  padding: 20px 32px;
+  padding: 0px 32px;
   border-radius: 0px 8px 8px 0px;
   max-width: 550px;
 }
@@ -30,23 +32,24 @@
 .infos ul {
   display: flex;
   flex-direction: column;
-  color: white;
-  font-size: 0.875rem;
+  color: #a9a9a9;
   gap: 12px;
 }
 
 .infos li a {
   display: flex;
   gap: 8px;
+  width: max-content;
 }
 
 .infos li a:hover {
   scale: 1.01;
   transition: 0.3s;
+  color: #fff;
 }
 
 .infos img {
-  width: 12px;
+  width: 16px;
 }
 
 .b8 {

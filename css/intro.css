@@ -1,18 +1,32 @@
 .introducao {
-  margin-bottom: 100px;
-  height: 100%;
+  height: 90vh;
   position: relative;
+
+  /* o & é referenciado ao pai, portanto deve ser colocado dentro dele */
+
+  & .titulo {
+    margin-bottom: 32px;
+  }
+
+  & .conteudo {
+    padding-top: 60px;
+
+    & p {
+      max-width: 60ch;
+    }
+  }
 }
 
-.layer {
+.cidade-bg {
   position: absolute;
-  top: 0;
+  bottom: -0px;
   left: 0;
   width: 100%;
   height: 100%;
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .l1 {

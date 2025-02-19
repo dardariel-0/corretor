@@ -8,11 +8,10 @@ html {
 
 body {
   margin: 0;
-  font-family: poppins;
-  color: #111111;
-  background-color: #222;
+  color: #fff;
+  background-color: #4b4b4b;
   display: grid;
-  grid-template-rows: 80px 1fr 1fr 1fr 1fr 200px;
+  font-family: "Urbanist", sans-serif;
 }
 h1,
 h2,
@@ -68,16 +67,22 @@ a {
   border: 2px solid white;
   text-align: center;
   place-self: start;
+  min-width: 120px;
+  place-content: center;
 }
+
 .button-1:hover {
   background-color: #444;
   border: 2px solid black;
   transition: 0.3s;
-  scale: 1.15;
 }
 
 .button-1 img {
   max-width: 18px;
+}
+
+.box-shadow {
+  box-shadow: -3px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* INICIO */
