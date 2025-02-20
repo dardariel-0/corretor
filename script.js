@@ -1,12 +1,52 @@
-const sobreMim = document.querySelector('[href="#sobre-mim"]');
-const headerBg = document.querySelector(".header-bg");
-console.log(sobreMim);
+/////////////////////////////////////////////////
 
-function mudarCor() {
-  headerBg.classList.toggle("preto");
+const headerBg = document.querySelector(".header-bg");
+const sectionB = document.querySelector(".scroll-black");
+
+const sectionG = document.querySelector(".scroll-grey");
+const sectionB2 = document.querySelector(".scroll-black2");
+
+function animaScroll() {
+  const sectionTop = sectionB.getBoundingClientRect().top;
+  const sectionBottom = sectionB.getBoundingClientRect().bottom;
+
+  // console.log(sectionTop, sectionBottom);
+  if (sectionTop < 80) {
+    headerBg.classList.add("preto");
+  } else if (sectionBottom > 60) {
+    headerBg.classList.remove("preto");
+  }
 }
 
-sobreMim.addEventListener("click", mudarCor);
+function animaScrollGrey() {
+  const sectionTop = sectionG.getBoundingClientRect().top;
+  const sectionBottom = sectionG.getBoundingClientRect().bottom;
+
+  console.log(sectionTop, sectionBottom);
+  if (sectionTop < 80) {
+    headerBg.classList.add("cinza");
+  } else if (sectionBottom > 60) {
+    headerBg.classList.remove("cinza");
+  }
+}
+
+function animaScroll2() {
+  const sectionTop = sectionB2.getBoundingClientRect().top;
+  const sectionBottom = sectionB2.getBoundingClientRect().bottom;
+
+  // console.log(sectionTop, sectionBottom);
+  if (sectionTop < 80) {
+    headerBg.classList.add("preto2");
+  } else if (sectionBottom > 60) {
+    headerBg.classList.remove("preto2");
+  }
+}
+
+window.addEventListener("scroll", animaScroll);
+window.addEventListener("scroll", animaScrollGrey);
+window.addEventListener("scroll", animaScroll2);
+
+/////////////q
 
 // slide
 

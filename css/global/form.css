@@ -17,7 +17,7 @@
   display: block;
   font: 600 1rem/1.5 "Urbanist", sans-serif;
   margin-bottom: 4px;
-  color: #4b4b4b;
+  color: var(--cor-bg);
 }
 .form-01 .coluna-2 {
   grid-column: span 2;
@@ -26,7 +26,7 @@
 .form-01 input[type="email"],
 .form-01 textarea {
   font: 400 1rem/1.5 "Urbanist", sans-serif;
-  background-color: #f1f1f1;
+  background-color: var(--cor-02);
   border: 1px solid #939393;
   padding: 10px;
   border-radius: 4px;
@@ -38,7 +38,7 @@
 .form-01 textarea:focus {
   outline: none;
   border-color: #7a7a7a;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 0 0 2px #a9a9a9;
 }
 @media (max-width: 600px) {

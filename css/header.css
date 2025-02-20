@@ -5,14 +5,25 @@ header {
 }
 
 .header-bg {
-  background-color: #4b4b4b;
+  background-color: var(--cor-01);
   height: 60px;
   display: grid;
   align-items: center;
 }
 
 .header-bg.preto {
-  background-color: #000;
+  background-color: var(--cor-bg);
+  transition: 0.3s ease;
+}
+
+.header-bg.cinza {
+  background-color: var(--cor-01);
+  transition: 0.3s ease;
+}
+
+.header-bg.preto2 {
+  background-color: var(--cor-bg);
+  transition: 0.3s ease;
 }
 
 .header {
@@ -24,7 +35,7 @@ header {
 .header ul {
   display: flex;
   gap: 80px;
-  color: white;
+  color: var(--cor-02);
 }
 
 .header .logo {

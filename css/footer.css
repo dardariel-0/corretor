@@ -1,0 +1,47 @@
+.footer-bg {
+  background-color: var(--cor-bg);
+  /* background-color: blueviolet; */
+}
+
+.footer {
+  height: 260px;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.footer-conteudo {
+  display: flex;
+  gap: 64px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--cor-02);
+}
+
+.footer .logo {
+  max-width: 64px;
+}
+
+.footer li {
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: relative;
+}
+.footer li::before {
+  display: none;
+  content: "●";
+  position: absolute;
+  left: -8px;
+}
+
+.footer li:hover::before {
+  display: block;
+  transition: 0.2s;
+}

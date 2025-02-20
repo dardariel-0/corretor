@@ -1,13 +1,14 @@
 .sobre-mim-bg {
-  background-color: #060606;
+  background-color: var(--cor-bg);
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .sobre-mim {
   margin-bottom: 100px;
   position: relative;
   height: 84vh;
+  z-index: 30;
 
   & .conteudo {
     z-index: 3;
@@ -20,6 +21,10 @@
     & p {
       max-width: 60ch;
       margin-bottom: 40px;
+    }
+
+    & .button-1 {
+      background-color: blue;
     }
   }
 }
@@ -34,7 +39,7 @@
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -2;
 }
 
 .b1 {

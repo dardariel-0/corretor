@@ -1,5 +1,5 @@
 .contato {
-  background-color: #000;
+  background-color: var(--cor-bg);
   padding-top: 100px;
 }
 
@@ -26,7 +26,7 @@
 #contato p {
   max-width: 32ch;
   margin-bottom: 32px;
-  color: white;
+  color: var(--cor-02);
 }
 
 .infos ul {
@@ -42,10 +42,26 @@
   width: max-content;
 }
 
-.infos li a:hover {
-  scale: 1.01;
-  transition: 0.3s;
+.infos li {
+  position: relative;
+}
+
+.infos li::before {
+  display: none;
+  content: "●";
+  position: absolute;
+  left: -18px;
   color: #fff;
+}
+
+.infos li:hover::before {
+  display: block;
+  transition: 0.2s;
+}
+
+.infos li a:hover {
+  transition: 0.3s;
+  color: var(--cor-02);
 }
 
 .infos img {

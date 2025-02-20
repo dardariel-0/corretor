@@ -19,3 +19,13 @@
   font: 700 1.5rem/1.5 "Urbanist", sans-serif;
   letter-spacing: 1px;
 }
+
+/* cores */
+
+:root {
+  --cor-01: #4b4b4b;
+  --cor-02: #f7f7f7;
+  --cor-03: #333;
+  --cor-04: #111;
+  --cor-bg: #060606;
+}
