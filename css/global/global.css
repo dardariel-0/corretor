@@ -71,6 +71,7 @@ a {
   place-content: center;
   z-index: 20;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .button-1:hover {

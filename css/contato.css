@@ -80,3 +80,24 @@
 .b6 {
   background-image: url("/img/parallax-3/3.png");
 }
+
+@media (max-width: 700px) {
+  .contato {
+    padding-top: 80px;
+  }
+
+  .contato .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & .formulario {
+      order: 2;
+    }
+
+    & .infos {
+      order: 1;
+      padding-left: 0;
+    }
+  }
+}

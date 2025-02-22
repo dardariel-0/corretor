@@ -16,17 +16,21 @@
   <header class="header-bg">
     <nav class="header container">
       <a class="logo" href="#home"><img src="/img/logo-w.svg" alt=""></a>
-      <ul class="font-1-s">
-        <li>
-          <a href="#sobre-mim">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#imoveis">Imóveis</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
+      <span class="btn-open" data-menu="button" aria-expanded="false" aria-controls="menu"><img src="/img/icones/hamburguer.svg" alt=""></span>
+      <div class="header-list">
+        <ul class="font-1-s">
+          <li>
+            <a href="#sobre-mim">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#imoveis">Imóveis</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+        <span class="close-menu"><img src="/img/icones/horario.svg" alt=""></span>
+      </div>
     </nav>
   </header>
 
@@ -38,6 +42,7 @@
     <span class="cidade-bg l1 linear-350"></span>
     <span class="cidade-bg l2"></span>
     <span class="cidade-bg l3"></span>
+    <span class="cidade-bg-mobile"></span>
   </div>
 
   <section class="sobre-mim-bg scroll-black" id="sobre-mim">
@@ -55,6 +60,7 @@
     <span class="bg b3"></span>
     <span class="bg b4 linear-300"></span>
     <span class="bg b5"></span>
+    <span class="cidade-bg-mobile2"></span>
   </section>
 
   <section class="imoveis-bg scroll-grey" id="imoveis">
@@ -124,8 +130,8 @@
 
   <section class="contato scroll-black2" id="contato">
     <div class="conteudo container">
-      <section aria-label="Formulário">
-        <form class="form-01 fade-70">
+      <section class="formulario" aria-label="Formulário">
+        <form class="form-01">
 
           <div>
             <label for="nome">Nome</label>
@@ -200,6 +206,7 @@
     </div>
   </footer>
 </body>
-<script src="/script.js"></script>
+<script type="module" src="/js/script.js"></script>
+<script src="/js/modules/slide.js"></script>
 
 </html>

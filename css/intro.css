@@ -1,6 +1,7 @@
 .introducao {
   height: 90vh;
   position: relative;
+  overflow: hidden;
 
   /* o & é referenciado ao pai, portanto deve ser colocado dentro dele */
 
@@ -17,7 +18,8 @@
   }
 }
 
-.cidade-bg {
+.cidade-bg,
+.cidade-bg-mobile {
   position: absolute;
   bottom: -0px;
   left: 0;
@@ -29,6 +31,10 @@
   z-index: -1;
 }
 
+.cidade-bg-mobile {
+  display: none;
+}
+
 .l1 {
   background-image: url("/img/city/1.png");
 }
@@ -37,4 +43,15 @@
 }
 .l3 {
   background-image: url("/img/city/3.png");
+}
+
+@media (max-width: 600px) {
+  .cidade-bg {
+    display: none;
+  }
+
+  .cidade-bg-mobile {
+    display: block;
+    background-image: url("/img/city/mobile-bg1.png");
+  }
 }

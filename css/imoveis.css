@@ -105,11 +105,51 @@
 }
 
 .mais-info {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 
 .mais-info span {
   max-width: 40ch;
+}
+
+.mais-info .button-1 {
+  place-self: end;
+}
+
+@media (max-width: 700px) {
+  .imoveis-bg {
+    background-image: linear-gradient(
+      to right,
+      var(--cor-bg) 70%,
+      var(--cor-01) 0%
+    );
+    & .conteudo {
+      padding-top: 80px;
+    }
+  }
+
+  .imoveis-bg::after {
+    left: 70%;
+    bottom: 0;
+  }
+
+  .imoveis-bg::before {
+    content: "";
+    background-image: url("/img/icones/boolean.svg");
+    transform: rotate(90deg);
+    width: 52px;
+    height: 52px;
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 0;
+  }
+
+  .imoveis .item {
+    grid-template-columns: 1fr;
+    gap: 20px 20px;
+    margin-bottom: 80px;
+  }
 }

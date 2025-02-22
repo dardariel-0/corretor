@@ -31,7 +31,8 @@
 
 /* /////////////////////////////////// */
 
-.sobre-mim-bg .bg {
+.sobre-mim-bg .bg,
+.cidade-bg-mobile2 {
   position: absolute;
   bottom: 0;
   height: 100%;
@@ -56,4 +57,37 @@
 }
 .b5 {
   background-image: url("/img/parallax-2/men.png");
+}
+
+@media (max-width: 700px) {
+  .sobre-mim {
+    & .conteudo {
+      padding-top: 80px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-mim-bg .bg {
+    display: none;
+  }
+
+  .cidade-bg-mobile2 {
+    display: block;
+    background-image: url("/img/parallax-2/mobile-bg.png");
+    height: 232px;
+    background-position: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre-mim {
+    height: 500px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cidade-bg-mobile2 {
+    height: 180px;
+  }
 }
