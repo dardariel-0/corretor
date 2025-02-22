@@ -14,32 +14,49 @@
   animation: linear-300 linear;
   animation-timeline: scroll();
 }
-/* 350 */
-@keyframes linear-350 {
+
+/* 200 */
+@keyframes linear-200 {
   to {
-    transform: translateX(-900px);
-  }
-  from {
     transform: translateX(300px);
   }
+  from {
+    transform: translateX(0px);
+  }
 }
 
-.linear-350 {
-  animation: linear-350 linear;
+.linear-200 {
+  animation: linear-200 linear;
   animation-timeline: scroll();
 }
-/* 350r */
-@keyframes linear-350-r {
+
+/* 200b */
+@keyframes linear-200b {
   to {
-    transform: translateX(100px);
+    transform: translateX(-300px);
   }
   from {
-    transform: translateX(-150px);
+    transform: translateX(0px);
   }
 }
 
-.linear-350-r {
-  animation: linear-350-r linear;
+.linear-200b {
+  animation: linear-200b linear;
+  animation-timeline: scroll();
+}
+
+/* 250 */
+@keyframes linear-250 {
+  to {
+    transform: translateX(50px);
+  }
+  from {
+    transform: translateX(-40px);
+  }
+}
+
+.linear-250 {
+  animation: linear-250 linear;
   animation-timeline: scroll();
 }
 

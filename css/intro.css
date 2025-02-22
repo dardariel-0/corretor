@@ -1,9 +1,6 @@
 .introducao {
   height: 90vh;
   position: relative;
-  overflow: hidden;
-
-  /* o & é referenciado ao pai, portanto deve ser colocado dentro dele */
 
   & .titulo {
     margin-bottom: 32px;

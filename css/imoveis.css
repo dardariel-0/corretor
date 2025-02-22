@@ -153,3 +153,20 @@
     margin-bottom: 80px;
   }
 }
+
+@media (max-width: 500px) {
+  .mais-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mais-info span {
+    font-size: 0.875rem;
+    max-width: max-content;
+  }
+
+  .mais-info .button-1 {
+    place-self: start;
+  }
+}
