@@ -55,3 +55,9 @@
     background-image: url("/img/city/mobile-bg1.png");
   }
 }
+
+@media (max-width: 500px) {
+  .introducao {
+    height: 520px;
+  }
+}

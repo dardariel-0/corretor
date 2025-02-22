@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 19.2 19.2" style="enable-background:new 0 0 19.2 19.2;" xml:space="preserve">
-<rect x="8" y="-2.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.9822 9.6189)" width="3.2" height="24"/>
-<rect x="-2.4" y="8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.9833 9.6166)" width="24" height="3.2"/>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_58_2)">
+<path d="M2.24026 0.502356L-0.0224609 2.76508L16.9479 19.7355L19.2107 17.4728L2.24026 0.502356Z" fill="#4B4B4B"/>
+<path d="M16.9468 0.50006L-0.0235596 17.4705L2.23916 19.7332L19.2096 2.76278L16.9468 0.50006Z" fill="#4B4B4B"/>
+</g>
+<defs>
+<clipPath id="clip0_58_2">
+<rect width="19.2" height="19.2" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
 </svg>

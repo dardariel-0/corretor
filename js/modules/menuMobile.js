@@ -1,6 +1,6 @@
 export default function initMenuMobile() {}
 
-// import outsideClick from "./outsideclick.js";
+import outsideClick from "./outsideclick.js";
 
 // consts
 const btnMobile = document.querySelector(".btn-open");
@@ -16,12 +16,14 @@ function menuClik() {
 btnMobile.addEventListener("click", menuClik);
 closeMenu.addEventListener("click", menuClik);
 
-// função clique outside
+//////////////////////////////
 
-function openMenu() {
-  outsideClick(menuMobile, "click", () => {
-    menuMobile.classList.remove("ativo");
-  });
+function removerAtivo() {
+  menuMobile.classList.remove("ativo");
 }
 
-// btnMobile.addEventListener("click", openMenu);
+function openMenu() {
+  outsideClick(menuMobile, "click", removerAtivo);
+}
+
+btnMobile.addEventListener("click", openMenu);
