@@ -10,11 +10,17 @@ const closeMenu = document.querySelector(".close-menu");
 // função 1
 
 function menuClik() {
-  menuMobile.classList.toggle("ativo");
+  menuMobile.classList.add("ativo");
+  menuMobile.setAttribute("data-outside");
+}
+
+function menuClose() {
+  menuMobile.classList.remove("ativo");
+  menuMobile.removeAttribute("data-outside");
 }
 
 btnMobile.addEventListener("click", menuClik);
-closeMenu.addEventListener("click", menuClik);
+closeMenu.addEventListener("click", menuClose);
 
 //////////////////////////////
 
