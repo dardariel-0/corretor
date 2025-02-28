@@ -11,8 +11,8 @@
 .imoveis-bg::after {
   content: "";
   background-image: url("/img/icones/boolean.svg");
-  width: 52px;
-  height: 52px;
+  width: 20px;
+  height: 20px;
   display: block;
   position: absolute;
   left: 40%;
@@ -31,7 +31,7 @@
   & .item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px 20px;
+    gap: 0px 32px;
     align-items: start;
     margin-bottom: 80px;
   }
@@ -52,9 +52,9 @@
 }
 
 .informacoes-item {
-  background: linear-gradient(#e0e2e3, #abadae);
-  padding: 12px 18px;
-  border-radius: 8px;
+  background: var(--degrade);
+  padding: 16px 20px;
+  border-radius: 20px;
   gap: 20px;
 
   & h3 {
@@ -90,12 +90,13 @@
 
 .mapa {
   height: 200px;
+  border-radius: 20px;
 }
 
 .mapa iframe {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 @media (max-width: 400px) {
@@ -139,8 +140,8 @@
     content: "";
     background-image: url("/img/icones/boolean.svg");
     transform: rotate(90deg);
-    width: 52px;
-    height: 52px;
+    width: 20px;
+    height: 20px;
     display: block;
     position: absolute;
     left: 70%;

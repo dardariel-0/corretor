@@ -107,7 +107,7 @@ header {
     position: fixed;
     top: 0;
     right: -70px;
-    background: linear-gradient(#e0e2e3, #abadae);
+    background: var(--degrade);
     transition: 0.2s ease;
     overflow-y: auto;
     scrollbar-width: none;

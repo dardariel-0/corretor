@@ -33,9 +33,12 @@
 /* cores */
 
 :root {
-  --cor-01: #4b4b4b;
+  --cor-01: #2e2d35;
   --cor-02: #f7f7f7;
-  --cor-03: #333;
-  --cor-04: #111;
-  --cor-bg: #060606;
+  --cor-03: #25242d;
+  --cor-04: #1e1d26;
+  --cor-05: #86858f;
+  --cor-bg: #040405;
+  --degrade: linear-gradient(#e0e2e3, #abadae);
+  --degrade2: #f1f1f1;
 }

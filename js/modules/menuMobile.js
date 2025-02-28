@@ -1,35 +1,22 @@
-export default function initMenuMobile() {}
+export default function initMenuMobile() {
+  const btnMobile = document.querySelector(".btn-open");
+  const menuMobile = document.querySelector(".header-list");
+  const closeMenu = document.querySelector(".close-menu");
 
-import outsideClick from "./outsideclick.js";
+  btnMobile.onclick = function () {
+    menuMobile.classList.add("ativo");
+  };
 
-// consts
-const btnMobile = document.querySelector(".btn-open");
-const menuMobile = document.querySelector(".header-list");
-const closeMenu = document.querySelector(".close-menu");
+  closeMenu.onclick = function () {
+    menuMobile.classList.remove("ativo");
+  };
 
-// função 1
-
-function menuClik() {
-  menuMobile.classList.add("ativo");
-  menuMobile.setAttribute("data-outside");
+  document.onclick = function (evento) {
+    if (
+      !btnMobile.contains(evento.target) &&
+      !menuMobile.contains(evento.target)
+    ) {
+      menuMobile.classList.remove("ativo");
+    }
+  };
 }
-
-function menuClose() {
-  menuMobile.classList.remove("ativo");
-  menuMobile.removeAttribute("data-outside");
-}
-
-btnMobile.addEventListener("click", menuClik);
-closeMenu.addEventListener("click", menuClose);
-
-//////////////////////////////
-
-function removerAtivo() {
-  menuMobile.classList.remove("ativo");
-}
-
-function openMenu() {
-  outsideClick(menuMobile, "click", removerAtivo);
-}
-
-btnMobile.addEventListener("click", openMenu);

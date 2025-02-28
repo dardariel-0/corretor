@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <meta name="theme-color" content="#4b4b4b">
+  <meta name="theme-color" content="#2e2d35">
 
   <link rel="stylesheet" href="/css/style.css">
   <title>Projeto Interativo</title>
@@ -17,7 +17,7 @@
 <body>
   <header class="header-bg">
     <nav class="header container">
-      <a class="logo" href="#home"><img src="/img/logo-w.svg" alt=""></a>
+      <a class="logo" href="/index.html"><img src="/img/logo-w.svg" alt=""></a>
       <span class="btn-open" data-menu="button" aria-expanded="false" aria-controls="menu"><img src="/img/icones/hamburguer.svg" alt=""></span>
       <div class="header-list">
         <ul class="font-1-s">
@@ -37,18 +37,18 @@
   </header>
 
   <div class="introducao" id="home">
-    <div class="container conteudo">
+    <div data-anime="scroll" class="container conteudo">
       <h1 class="titulo font-1-T">Introdução</h1>
       <p class="font-1-m">Lorem ipsum dolor sit amet. Qui deserunt beatae id rerum quos aut magni beatae ex illum earum. Aut dolores numquam et odio sint aut culpa omnis in vero odit qui internos ut Aut blanditiis dolorem et voluptatem necessitatibus et i sed enim repellat et voluptatem numquam ut odit expedita eos quaerat sunt?</p>
     </div>
-    <span class="cidade-bg l1 linear-200"></span>
+    <span class="cidade-bg l1"></span>
     <span class="cidade-bg l2 linear-200b"></span>
-    <span class="cidade-bg l3"></span>
+    <span class="cidade-bg l3 linear-200"></span>
     <span class="cidade-bg-mobile"></span>
   </div>
 
   <section class="sobre-mim-bg scroll-black" id="sobre-mim">
-    <div class="sobre-mim container js-scroll-left">
+    <div data-anime="scroll" class="sobre-mim container">
       <div class="conteudo dados">
         <h1 class="titulo font-1-T">Sobre mim</h1>
         <p class="font-1-m">Corretor responável. Qui deserunt beatae id rerum quos aut magni beatae ex illum earum. Aut dolores numquam et odio sint aut culpa omnis in vero odit qui internos ut Aut blanditiis dolorem et voluptatem necessitatibus et i sed enim repellat et voluptatem numquam ut odit expedita eos quaerat sunt im repellat et voluptatem numquam ut odit expedita eos.</p>
@@ -68,17 +68,17 @@
   <section class="imoveis-bg scroll-grey" id="imoveis">
     <div class="imoveis conteudo container">
 
-      <h1 class="titulo font-1-T fade-left">imóveis</h1>
+      <h1 data-anime="scroll" class="titulo font-1-T fade-left">imóveis</h1>
 
       <article class="item">
 
-        <div class="titulo-item">
+        <div data-anime="scroll" class="titulo-item">
           <h2 class="font-1-g">Ministro Nelson Hungria</h2>
           <span class="font-1-s">Rua Ministro Nélson Hungria, 90 - Morumbi</span>
         </div>
 
 
-        <div class="infos-principal">
+        <div data-anime="scroll" class="infos-principal">
           <div class="informacoes-item box-shadow">
             <h3>Características Técnicas</h3>
             <ul class="font-1-m">
@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <div class="slide-fotos">
+        <div data-anime="scrollRight" class="slide-fotos">
           <div class="slideshow-container box-shadow">
             <div class="mySlides">
               <img src="/img/fotos/1.png">
@@ -132,56 +132,58 @@
 
   <section class="contato scroll-black2" id="contato">
     <div class="conteudo container">
-      <section class="formulario js-scroll-left" aria-label="Formulário">
+
+      <section data-anime="scroll" class="formulario js-scroll-left" aria-label="Formulário">
         <form class="form-01">
 
           <div>
-            <label for="nome">Nome</label>
+
             <input type="text" id="nome" name="nome" placeholder="Seu nome">
           </div>
 
           <div>
-            <label for="tel">Telefone</label>
+
             <input type="text" id="tel" name="telefone" placeholder="(99) 99999-9999">
           </div>
 
           <div class="coluna-2">
-            <label for="email">Email</label>
+
             <input type="email" id="email" name="email" placeholder="contato@email.com">
           </div>
 
           <div>
-            <label for="cidade">Cidade</label>
+
             <input type="text" id="cidade" name="cidade" placeholder="Cidade">
           </div>
 
           <div>
-            <label for="estado">Estado</label>
+
             <input type="text" id="estado" name="estado" placeholder="Estado">
           </div>
 
           <div class="coluna-2">
-            <label for="mensagem">Mensagem</label>
+
             <textarea rows="3" name="mensagem" id="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
-          <button class="button-1">Enviar Mensagem</button>
+          <button class="button-1 box-shadow">Enviar Mensagem</button>
         </form>
       </section>
 
-      <section class="infos">
+      <section data-anime="scrollRight" class="infos">
         <h1 class="titulo font-1-gg">Vamos conversar!</h1>
         <p class="font-1-m">Entre em contato com minha equipe para conversarmos sobre a sua pretensão de lugar para viver de forma segura e confortável.
         </p>
 
         <div>
           <ul class="font-1-n">
-            <li><a href="/"><img src="/img/icones/wpp.svg" alt="">(00) 00000-0000</a></li>
+            <li><a href="/"><img src="/img/icones/wpp2.svg" alt="">(00) 00000-0000</a></li>
             <li><a href="/"><img src="/img/icones/instagram.svg" alt="">corretor_exemplo</a></li>
             <li><a href="/"><img src="/img/icones/face.svg" alt="">Corretor Exemplo</a></li>
             <li><a href="/"><img src="/img/icones/email.svg" alt="">corretor_exemplo@gmail.com</a></li>
           </ul>
         </div>
       </section>
+
     </div>
   </section>
 

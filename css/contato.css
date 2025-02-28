@@ -5,15 +5,15 @@
 
 .contato .conteudo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   justify-content: start;
   padding-bottom: 40px;
   width: 100%;
 }
 
 .infos {
-  /* background-color: black; */
-  padding: 0px 32px;
+  /* padding: 0px 32px; */
   border-radius: 0px 8px 8px 0px;
   max-width: 550px;
 }

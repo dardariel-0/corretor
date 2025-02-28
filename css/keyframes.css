@@ -60,57 +60,27 @@
   animation-timeline: scroll();
 }
 
-/* FADE 30 */
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-}
-
-.fade {
-  animation: fade;
-  animation-timeline: scroll();
-}
-
-/* FADE 70 */
-@keyframes fade-70 {
-  70% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
-}
-
-.fade-70 {
-  animation: fade-70;
-  animation-timeline: scroll();
-}
-/* /////////////////// */
-
 /* * js left */
-.js-scroll-left {
+
+[data-anime="scroll"] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
-  transition: 0.5s;
+  transition: 1s;
 }
 
-.js-scroll-left.ativo {
+.js-animaLeft {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
 /* js right */
-.js-scroll-right {
+[data-anime="scrollRight"] {
   opacity: 0;
   transform: translate3d(30px, 0, 0);
   transition: 0.9s;
 }
 
-.js-scroll-right.ativo {
+.js-animaRight {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

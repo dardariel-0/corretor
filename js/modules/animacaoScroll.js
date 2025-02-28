@@ -1,50 +1,35 @@
-//animação scroll
-const sections = document.querySelectorAll(".js-scroll-left");
+export default function animacaoScroll() {
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
+  const sectionsRight = document.querySelectorAll('[data-anime="scrollRight"]');
 
-function animacaoLeft() {
-  if (sections.length) {
-    const metadeTelaUsuario = window.innerHeight * 0.2;
-    // aqui puxei 70% do tamannho da tela do usuario que é a distancia q a animação vai acontecer
+  const metadeTelaUsuario = window.innerHeight * 0.8;
 
-    function animacaoScroll() {
-      sections.forEach((section) => {
-        const sectionTop =
-          section.getBoundingClientRect().top - metadeTelaUsuario;
+  function scrollAnimado() {
+    sections.forEach((section) => {
+      let sectionTop = section.getBoundingClientRect().top - metadeTelaUsuario;
 
-        if (sectionTop < 0) {
-          section.classList.add("ativo");
-        }
-      });
-    }
-
-    animacaoScroll();
+      console.log(sectionTop);
+      if (sectionTop < 0) {
+        section.classList.add("js-animaLeft");
+      }
+    });
   }
-  // animacaoScroll();
 
-  window.addEventListener("scroll", animacaoScroll);
-}
-animacaoLeft();
+  scrollAnimado();
 
-function animacaoRight() {
-  const sections = document.querySelectorAll(".js-scroll-right");
+  function scrollAnimadoRight() {
+    sectionsRight.forEach((section) => {
+      let sectionTop = section.getBoundingClientRect().top - metadeTelaUsuario;
 
-  if (sections.length) {
-    const metadeTelaUsuario = window.innerHeight * 0.7;
-    // aqui puxei 70% do tamannho da tela do usuario que é a distancia q a animação vai acontecer
-
-    function animacaoScroll() {
-      sections.forEach((section) => {
-        const sectionTop =
-          section.getBoundingClientRect().top - metadeTelaUsuario;
-
-        if (sectionTop < 0) {
-          section.classList.add("ativo");
-        }
-      });
-    }
+      console.log(sectionTop);
+      if (sectionTop < 0) {
+        section.classList.add("js-animaRight");
+      }
+    });
   }
-  animacaoScroll();
 
-  window.addEventListener("scroll", animacaoScroll);
+  scrollAnimadoRight();
+
+  window.addEventListener("scroll", scrollAnimado);
+  window.addEventListener("scroll", scrollAnimadoRight);
 }
-animacaoRight();
