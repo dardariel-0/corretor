@@ -39,7 +39,7 @@ a {
 
 .titulo {
   color: var(--cor-02);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
   font-size: 2rem;
   max-width: 10ch;

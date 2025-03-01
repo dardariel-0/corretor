@@ -1,9 +1,11 @@
 .font-1-s {
   font: 400 0.875rem/1.5 "Urbanist", sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .font-1-m {
-  font: 400 1rem/1.5 "Urbanist", sans-serif;
+  font: 400 1.1rem/1.4 "Urbanist", sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .font-1-g {
@@ -38,6 +40,7 @@
   --cor-03: #25242d;
   --cor-04: #1e1d26;
   --cor-05: #86858f;
+  --cor-06: #adacb5;
   --cor-bg: #040405;
   --degrade: linear-gradient(#e0e2e3, #abadae);
   --degrade2: #f1f1f1;

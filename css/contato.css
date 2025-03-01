@@ -1,6 +1,7 @@
 .contato {
   background-color: var(--cor-bg);
   padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .contato .conteudo {
@@ -32,7 +33,7 @@
 .infos ul {
   display: flex;
   flex-direction: column;
-  color: #a9a9a9;
+  color: var(--cor-06);
   gap: 12px;
 }
 
@@ -71,6 +72,10 @@
 @media (max-width: 700px) {
   .contato {
     padding-top: 80px;
+  }
+
+  .infos li:hover::before {
+    display: none;
   }
 
   .contato .conteudo {
