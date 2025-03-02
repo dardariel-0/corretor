@@ -12,6 +12,7 @@ body {
   background-color: var(--cor-01);
   display: grid;
   font-family: "Urbanist", sans-serif;
+  overflow-x: hidden !important;
 }
 h1,
 h2,
