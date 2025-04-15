@@ -6,6 +6,7 @@ header {
 
 .header-bg {
   background-color: var(--cor-01);
+  background-color: green;
   height: 60px;
   display: grid;
   align-items: center;
