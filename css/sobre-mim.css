@@ -1,0 +1,90 @@
+.sobre-mim-bg {
+  background-color: var(--cor-bg);
+  position: relative;
+  z-index: 1;
+}
+
+.sobre-mim {
+  margin-bottom: 100px;
+  position: relative;
+  height: 84vh;
+  z-index: 30;
+
+  & .conteudo {
+    z-index: 3;
+    padding-top: 120px;
+
+    & .titulo {
+      margin-bottom: 32px;
+    }
+
+    & p {
+      max-width: 60ch;
+      margin-bottom: 40px;
+    }
+
+    & .button-1 {
+      background-color: blue;
+    }
+  }
+}
+
+/* /////////////////////////////////// */
+
+.sobre-mim-bg .bg,
+.cidade-bg-mobile2 {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.b1 {
+  background-image: url("/img/parallax-2/3.png");
+}
+.b2 {
+  background-image: url("/img/parallax-2/2.png");
+}
+.b3 {
+  background-image: url("/img/parallax-2/1.png");
+}
+.b4 {
+  background-image: url("/img/parallax-2/casa.png");
+}
+.b5 {
+  background-image: url("/img/parallax-2/men.png");
+}
+
+@media (max-width: 700px) {
+  .sobre-mim {
+    & .conteudo {
+      padding-top: 80px;
+    }
+  }
+  .sobre-mim-bg .bg {
+    display: none;
+  }
+
+  .cidade-bg-mobile2 {
+    display: block;
+    background-image: url("/img/parallax-2/mobile-bg.png");
+    height: 232px;
+    background-position: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .sobre-mim {
+    height: 520px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cidade-bg-mobile2 {
+    height: 180px;
+  }
+}

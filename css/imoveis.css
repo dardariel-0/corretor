@@ -1,0 +1,173 @@
+.imoveis-bg {
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    var(--cor-bg) 40%,
+    var(--cor-01) 0%
+  );
+  position: relative;
+}
+
+.imoveis-bg::after {
+  content: "";
+  background-image: url("/img/icones/boolean.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+
+.imoveis-bg {
+  & .conteudo {
+    padding-top: 120px;
+  }
+
+  .imoveis .titulo {
+    margin-bottom: 32px;
+  }
+
+  & .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 32px;
+    align-items: start;
+    margin-bottom: 80px;
+  }
+
+  & .titulo h2 {
+    margin-bottom: 8px;
+  }
+}
+
+.titulo-item {
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+
+.infos-principal {
+  display: grid;
+  gap: 20px;
+}
+
+.informacoes-item {
+  background: var(--degrade);
+  padding: 16px 20px;
+  border-radius: 20px;
+  gap: 20px;
+
+  & h3 {
+    color: var(--cor-bg);
+    margin-bottom: 16px;
+  }
+
+  & h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-01);
+    margin-top: 8px;
+  }
+
+  & ul {
+    color: var(--cor-bg);
+    margin-bottom: 12px;
+  }
+
+  & ul li {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  & li span {
+    font-weight: bold;
+  }
+}
+
+.mapa {
+  height: 200px;
+  border-radius: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 400px) {
+  .mapa {
+    height: 340px;
+  }
+}
+
+.mais-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mais-info span {
+  max-width: 40ch;
+}
+
+.mais-info .button-1 {
+  place-self: end;
+}
+
+@media (max-width: 700px) {
+  .imoveis-bg {
+    background-image: linear-gradient(
+      to right,
+      var(--cor-bg) 70%,
+      var(--cor-01) 0%
+    );
+    & .conteudo {
+      padding-top: 80px;
+    }
+  }
+
+  .imoveis-bg::after {
+    left: 70%;
+    bottom: 0;
+  }
+
+  .imoveis-bg::before {
+    content: "";
+    background-image: url("/img/icones/boolean.svg");
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 0;
+  }
+
+  .imoveis .item {
+    grid-template-columns: 1fr;
+    gap: 20px 20px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mais-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mais-info span {
+    font-size: 0.875rem;
+    max-width: max-content;
+  }
+
+  .mais-info .button-1 {
+    place-self: start;
+  }
+}

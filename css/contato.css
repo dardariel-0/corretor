@@ -1,0 +1,95 @@
+.contato {
+  background-color: var(--cor-bg);
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.contato .conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  justify-content: start;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.infos {
+  /* padding: 0px 32px; */
+  border-radius: 0px 8px 8px 0px;
+  max-width: 550px;
+}
+
+#contato h1 {
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+#contato p {
+  max-width: 32ch;
+  margin-bottom: 32px;
+  color: var(--cor-02);
+}
+
+.infos ul {
+  display: flex;
+  flex-direction: column;
+  color: var(--cor-06);
+  gap: 12px;
+}
+
+.infos li a {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+}
+
+.infos li {
+  position: relative;
+}
+
+.infos li::before {
+  display: none;
+  content: "●";
+  position: absolute;
+  left: -18px;
+  color: #fff;
+}
+
+.infos li:hover::before {
+  display: block;
+  transition: 0.2s;
+}
+
+.infos li a:hover {
+  transition: 0.3s;
+  color: var(--cor-02);
+}
+
+.infos img {
+  width: 16px;
+}
+
+@media (max-width: 700px) {
+  .contato {
+    padding-top: 80px;
+  }
+
+  .infos li:hover::before {
+    display: none;
+  }
+
+  .contato .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    & .formulario {
+      order: 2;
+    }
+
+    & .infos {
+      order: 1;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.form-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
+  background: var(--cor-01);
+  padding: 20px 40px;
+  padding-top: 32px;
+  border-radius: 20px;
+}
+
+.form-01 .button-1 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.form-01 .coluna-2 {
+  grid-column: span 2;
+}
+.form-01 input[type="text"],
+.form-01 input[type="email"],
+.form-01 textarea {
+  font: 500 1rem/1.5 "Urbanist", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0;
+  padding-left: 0;
+  border-radius: 0;
+  color: var(--cor-02);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--cor-05);
+}
+.form-01 input::placeholder {
+  color: var(--cor-05);
+}
+
+.form-01 input[type="text"]:focus,
+.form-01 input[type="email"]:focus,
+.form-01 textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #cbcacd;
+}
+
+@media (max-width: 900px) {
+  .form-01 {
+    padding: 20px 20px;
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-01 {
+    grid-template-columns: 1fr;
+  }
+  .form-01 .coluna-2 {
+    grid-column: 1;
+  }
+}

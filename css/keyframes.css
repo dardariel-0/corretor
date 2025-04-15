@@ -1,0 +1,86 @@
+/* KEYFRAMES */
+
+/* 300 */
+@keyframes linear-300 {
+  to {
+    transform: translateY(200px);
+  }
+  from {
+    transform: translateY(-120px);
+  }
+}
+
+.linear-300 {
+  animation: linear-300 linear;
+  animation-timeline: scroll();
+}
+
+/* 200 */
+@keyframes linear-200 {
+  to {
+    transform: translateX(300px);
+  }
+  from {
+    transform: translateX(0px);
+  }
+}
+
+.linear-200 {
+  animation: linear-200 linear;
+  animation-timeline: scroll();
+}
+
+/* 200b */
+@keyframes linear-200b {
+  to {
+    transform: translateX(-300px);
+  }
+  from {
+    transform: translateX(0px);
+  }
+}
+
+.linear-200b {
+  animation: linear-200b linear;
+  animation-timeline: scroll();
+}
+
+/* 250 */
+@keyframes linear-250 {
+  to {
+    transform: translateX(50px);
+  }
+  from {
+    transform: translateX(-40px);
+  }
+}
+
+.linear-250 {
+  animation: linear-250 linear;
+  animation-timeline: scroll();
+}
+
+/* * js left */
+
+[data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 1s;
+}
+
+.js-animaLeft {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* js right */
+[data-anime="scrollRight"] {
+  opacity: 0;
+  transform: translate3d(30px, 0, 0);
+  transition: 0.9s;
+}
+
+.js-animaRight {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

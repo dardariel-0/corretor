@@ -1,0 +1,13 @@
+@import "/css/global/global.css";
+@import "/css/global/form.css";
+@import "/css/global/slide.css";
+@import "/css/global/typo-color.css";
+
+@import "/css/header.css";
+@import "/css/intro.css";
+@import "/css/sobre-mim.css";
+@import "/css/imoveis.css";
+@import "/css/contato.css";
+@import "/css/footer.css";
+
+@import "/css/keyframes.css";
