@@ -1,224 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preload" href="/css/style.css" as="style" />
 
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preload" href="/css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#2e2d35" />
 
-  <meta name="theme-color" content="#2e2d35">
+    <title>Corretor teste</title>
+  </head>
 
-  <title>Corretor teste</title>
-</head>
-
-<body>
-  <header class="header-bg">
-    <nav class="header container">
-      <a class="logo" href="/index.html"><img src="/img/logo-w.svg" alt=""></a>
-      <span class="btn-open" data-menu="button" aria-expanded="false" aria-controls="menu"><img src="/img/icones/hamburguer.svg" alt=""></span>
-      <div class="header-list">
-        <ul class="font-1-s">
-          <li>
-            <a href="#sobre-mim">Sobre mim</a>
-          </li>
-          <li>
-            <a href="#imoveis">Imóveis</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
-        </ul>
-        <span class="close-menu"><img src="/img/icones/x.svg" alt=""></span>
-      </div>
-    </nav>
-  </header>
-
-  <div class="introducao" id="home">
-    <div data-anime="scroll" class="container conteudo">
-      <h1 class="titulo font-1-gg">Introdução</h1>
-      <p class="font-1-m">Lorem ipsum dolor sit amet. Qui deserunt beatae id rerum quos aut magni beatae ex illum earum. Aut dolores numquam et odio sint aut culpa omnis in vero odit qui internos ut Aut blanditiis dolorem et voluptatem necessitatibus et i sed enim repellat et voluptatem numquam ut odit expedita eos quaerat sunt?</p>
-    </div>
-    <span class="cidade-bg l1"></span>
-    <span class="cidade-bg l2 linear-200b"></span>
-    <span class="cidade-bg l3 linear-200"></span>
-    <span class="cidade-bg-mobile"></span>
-  </div>
-
-  <section class="sobre-mim-bg scroll-black" id="sobre-mim">
-    <div data-anime="scroll" class="sobre-mim container">
-      <div class="conteudo dados">
-        <h1 class="titulo font-1-gg">Sobre mim</h1>
-        <p class="font-1-m">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni architecto dolorem sequi expedita laborum reiciendis eos doloribus tempora. Reiciendis perferendis ea atque similique aliquid repellat vel nemo iure itaque hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit nemo debitis repudiandae assumenda distinctio.</p>
-      </div>
-      <a class="button-1" href="#"> Fale comigo <img src="/img/icones/wpp.svg" alt=""></a>
-    </div>
-
-    <span class="bg b1">
-    </span>
-    <span class="bg b2 linear-200"></span>
-    <span class="bg b3 linear-250"></span>
-    <span class="bg b4 linear-300"></span>
-    <span class="bg b5"></span>
-    <span class="cidade-bg-mobile2"></span>
-  </section>
-
-  <section class="imoveis-bg scroll-grey" id="imoveis">
-    <div class="imoveis conteudo container">
-
-      <h1 data-anime="scroll" class="titulo font-1-gg fade-left">Imóveis</h1>
-
-      <article class="item">
-
-        <div data-anime="scroll" class="titulo-item">
-          <h2 class="font-1-gg">Ministro Nelson Hungria</h2>
-          <span class="font-1-s">Rua Ministro Nélson Hungria, 90 - Morumbi</span>
+  <body>
+    <header class="header-bg">
+      <nav class="header container">
+        <a class="logo" href="/index.html"
+          ><img src="/img/logo-w.svg" alt=""
+        /></a>
+        <span
+          class="btn-open"
+          data-menu="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          ><img src="/img/icones/hamburguer.svg" alt=""
+        /></span>
+        <div class="header-list">
+          <ul class="font-1-s">
+            <li>
+              <a href="#sobre-mim">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#imoveis">Imóveis</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
+          <span class="close-menu"><img src="/img/icones/x.svg" alt="" /></span>
         </div>
+      </nav>
+    </header>
 
+    <div class="introducao" id="home">
+      <div data-anime="scroll" class="container conteudo">
+        <h1 class="titulo font-1-gg">Introdução</h1>
+        <p class="font-1-m">
+          Lorem ipsum dolor sit amet. Qui deserunt beatae id rerum quos aut
+          magni beatae ex illum earum. Aut dolores numquam et odio sint aut
+          culpa omnis in vero odit qui internos ut Aut blanditiis dolorem et
+          voluptatem necessitatibus et i sed enim repellat et voluptatem numquam
+          ut odit expedita eos quaerat sunt?
+        </p>
+      </div>
+      <span class="cidade-bg l1"></span>
+      <span class="cidade-bg l2 linear-200b"></span>
+      <span class="cidade-bg l3 linear-200"></span>
+      <span class="cidade-bg-mobile"></span>
+    </div>
 
-        <div data-anime="scroll" class="infos-principal">
-          <div class="informacoes-item box-shadow">
-            <h3>Características Técnicas</h3>
+    <section class="sobre-mim-bg scroll-black" id="sobre-mim">
+      <div data-anime="scroll" class="sobre-mim container">
+        <div class="conteudo dados">
+          <h1 class="titulo font-1-gg">Sobre mim</h1>
+          <p class="font-1-m">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+            architecto dolorem sequi expedita laborum reiciendis eos doloribus
+            tempora. Reiciendis perferendis ea atque similique aliquid repellat
+            vel nemo iure itaque hic. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad reprehenderit nemo debitis repudiandae
+            assumenda distinctio.
+          </p>
+        </div>
+        <a class="button-1" href="#">
+          Fale comigo <img src="/img/icones/wpp.svg" alt=""
+        /></a>
+      </div>
+
+      <span class="bg b1"> </span>
+      <span class="bg b2 linear-200"></span>
+      <span class="bg b3 linear-250"></span>
+      <span class="bg b4 linear-300"></span>
+      <span class="bg b5"></span>
+      <span class="cidade-bg-mobile2"></span>
+    </section>
+
+    <section class="imoveis-bg scroll-grey" id="imoveis">
+      <div class="imoveis conteudo container">
+        <h1 data-anime="scroll" class="titulo font-1-gg fade-left">Imóveis</h1>
+
+        <article class="item">
+          <div data-anime="scroll" class="titulo-item">
+            <h2 class="font-1-gg">Ministro Nelson Hungria</h2>
+            <span class="font-1-s"
+              >Rua Ministro Nélson Hungria, 90 - Morumbi</span
+            >
+          </div>
+
+          <div data-anime="scroll" class="infos-principal">
+            <div class="informacoes-item box-shadow">
+              <h3>Características Técnicas</h3>
+              <ul class="font-1-m">
+                <li>Área Bruta Locável <span>5.876m²</span></li>
+                <li>Área Máxima do Andar <span>1.200m²</span></li>
+                <li>Área Mínima do Andar <span>1.000m²</span></li>
+                <li>Andares<span>4</span></li>
+              </ul>
+            </div>
+            <div class="mapa box-shadow">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6588185824667!2d-46.70533509999999!3d-23.616566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50d6bee3c4ab%3A0xa0fcff5f65a2e722!2sR.%20Min.%20Nelson%20Hungria%2C%2090%20-%20Vila%20Tramontano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005690-050!5e0!3m2!1spt-BR!2sbr!4v1726266402247!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div data-anime="scrollRight" class="slide-fotos">
+            <div class="slideshow-container box-shadow">
+              <div class="mySlides">
+                <img src="/img/fotos/1.png" />
+              </div>
+
+              <div class="mySlides">
+                <img src="img/fotos/2.png" />
+              </div>
+              <div class="mySlides">
+                <img src="img/fotos/3.png" />
+              </div>
+              <div class="mySlides">
+                <img src="img/fotos/4.png" />
+              </div>
+              <div class="mySlides">
+                <img src="img/fotos/5.png" />
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="mais-info">
+              <span class="font-1-s"
+                >Para mais informações sobre o imóvel entre em contato com a
+                nossa equipe.</span
+              >
+              <a class="button-1 box-shadow" href="/"> saiba mais</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contato scroll-black2" id="contato">
+      <div class="conteudo container">
+        <section
+          data-anime="scroll"
+          class="formulario js-scroll-left"
+          aria-label="Formulário"
+        >
+          <form class="form-01">
+            <div>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                id="tel"
+                name="telefone"
+                placeholder="(99) 99999-9999"
+              />
+            </div>
+
+            <div class="coluna-2">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="contato@email.com"
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                placeholder="Cidade"
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                id="estado"
+                name="estado"
+                placeholder="Estado"
+              />
+            </div>
+
+            <div class="coluna-2">
+              <textarea
+                rows="3"
+                name="mensagem"
+                id="mensagem"
+                placeholder="O que você precisa?"
+              ></textarea>
+            </div>
+            <button class="button-1 box-shadow">Enviar Mensagem</button>
+          </form>
+        </section>
+
+        <section data-anime="scrollRight" class="infos">
+          <h1 class="titulo font-1-gg">Vamos conversar</h1>
+          <p class="font-1-m">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+            voluptate nobis suscipit asperiores maxime veritatis sed illo fugit
+            sunt, quos quisquam! Autem, illo tenetur.
+          </p>
+
+          <div>
             <ul class="font-1-m">
-              <li>Área Bruta Locável <span>5.876m²</span></li>
-              <li>Área Máxima do Andar <span>1.200m²</span></li>
-              <li>Área Mínima do Andar <span>1.000m²</span></li>
-              <li>Andares<span>4</span></li>
+              <li>
+                <a href="/"
+                  ><img src="/img/icones/wpp2.svg" alt="" />(00) 00000-0000</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  ><img src="/img/icones/instagram.svg" alt="" />@placeholder</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  ><img src="/img/icones/face.svg" alt="" />Placeholder</a
+                >
+              </li>
+              <li>
+                <a href="/"
+                  ><img
+                    src="/img/icones/email.svg"
+                    alt=""
+                  />placeholder@gmail.com</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="mapa box-shadow">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6588185824667!2d-46.70533509999999!3d-23.616566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50d6bee3c4ab%3A0xa0fcff5f65a2e722!2sR.%20Min.%20Nelson%20Hungria%2C%2090%20-%20Vila%20Tramontano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005690-050!5e0!3m2!1spt-BR!2sbr!4v1726266402247!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-
-        <div data-anime="scrollRight" class="slide-fotos">
-          <div class="slideshow-container box-shadow">
-            <div class="mySlides">
-              <img src="/img/fotos/1.png">
-            </div>
-
-            <div class="mySlides">
-              <img src="img/fotos/2.png">
-            </div>
-            <div class="mySlides">
-              <img src="img/fotos/3.png">
-            </div>
-            <div class="mySlides">
-              <img src="img/fotos/4.png">
-            </div>
-            <div class="mySlides">
-              <img src="img/fotos/5.png">
-            </div>
-
-
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <div class="mais-info">
-            <span class="font-1-s">Para mais informações sobre o imóvel entre em contato com a nossa equipe.</span>
-            <a class="button-1 box-shadow" href="/"> saiba mais</a>
-          </div>
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-  <section class="contato scroll-black2" id="contato">
-    <div class="conteudo container">
-
-      <section data-anime="scroll" class="formulario js-scroll-left" aria-label="Formulário">
-        <form class="form-01">
-
-          <div>
-
-            <input type="text" id="nome" name="nome" placeholder="Seu nome">
-          </div>
-
-          <div>
-
-            <input type="text" id="tel" name="telefone" placeholder="(99) 99999-9999">
-          </div>
-
-          <div class="coluna-2">
-
-            <input type="email" id="email" name="email" placeholder="contato@email.com">
-          </div>
-
-          <div>
-
-            <input type="text" id="cidade" name="cidade" placeholder="Cidade">
-          </div>
-
-          <div>
-
-            <input type="text" id="estado" name="estado" placeholder="Estado">
-          </div>
-
-          <div class="coluna-2">
-
-            <textarea rows="3" name="mensagem" id="mensagem" placeholder="O que você precisa?"></textarea>
-          </div>
-          <button class="button-1 box-shadow">Enviar Mensagem</button>
-        </form>
-      </section>
-
-      <section data-anime="scrollRight" class="infos">
-        <h1 class="titulo font-1-gg">Vamos conversar</h1>
-        <p class="font-1-m">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptate nobis suscipit asperiores maxime veritatis sed illo fugit sunt, quos quisquam! Autem, illo tenetur.
-        </p>
-
-        <div>
-          <ul class="font-1-m">
-            <li><a href="/"><img src="/img/icones/wpp2.svg" alt="">(00) 00000-0000</a></li>
-            <li><a href="/"><img src="/img/icones/instagram.svg" alt="">@placeholder</a></li>
-            <li><a href="/"><img src="/img/icones/face.svg" alt="">Placeholder</a></li>
-            <li><a href="/"><img src="/img/icones/email.svg" alt="">placeholder@gmail.com</a></li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-  </section>
-
-  <footer class="footer-bg">
-    <div class="footer container">
-      <div class="footer-conteudo">
-        <ul class="font-1-s">
-          <li>
-            <a href="#sobre-mim">Sobre mim</a>
-          </li>
-          <li>
-            <a href="#imoveis">Imóveis</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
-        </ul>
-
-        <div class="info-footer">
-          <h2 class="font-1-gg">Informações</h2>
-          <p class="font-1-s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque cum esse dolorem animi error labore laborum culpa, voluptate autem blanditiis aperiam ipsum! Illum ab voluptas illo. Modi fugiat placeat laudantium?</p>
-        </div>
-
-        <p class="footer-copy font-1-s cor-05 ">Projeto II - Nome e imagens ilustrativas.</p>
-
+        </section>
       </div>
-    </div>
-  </footer>
-</body>
-<script type="module" src="/js/script.js"></script>
-<script type="module" src="/js/modules/animacaoScroll.js"></script>
+    </section>
 
-<script src="/js/modules/slide.js"></script>
+    <footer class="footer-bg">
+      <div class="footer container">
+        <div class="footer-conteudo">
+          <ul class="font-1-s">
+            <li>
+              <a href="#sobre-mim">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#imoveis">Imóveis</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
 
+          <div class="info-footer">
+            <h2 class="font-1-gg">Informações</h2>
+            <p class="font-1-s">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+              cum esse dolorem animi error labore laborum culpa, voluptate autem
+              blanditiis aperiam ipsum! Illum ab voluptas illo. Modi fugiat
+              placeat laudantium?
+            </p>
+          </div>
+
+          <p class="footer-copy font-1-s cor-05">
+            Projeto II - Nome e imagens ilustrativas.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="/js/script.js"></script>
+  <script type="module" src="/js/modules/animacaoScroll.js"></script>
+
+  <script src="/js/modules/slide.js"></script>
 </html>
